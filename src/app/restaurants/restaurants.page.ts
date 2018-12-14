@@ -17,10 +17,10 @@ export class RestaurantsPage implements OnInit {
   ngOnInit() {
     const estId = this.route.snapshot.paramMap.get('estId');
     console.log(estId);
-    this.getEstablishments(estId);
+    this.getRestaurants(estId);
   }
 
-  getEstablishments(estId) {
+  getRestaurants(estId) {
     if(estId) {
       let resObs: Observable<any> = this.api.getRestaurants(estId);
       resObs.subscribe(
