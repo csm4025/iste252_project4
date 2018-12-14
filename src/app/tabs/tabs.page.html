@@ -3,18 +3,30 @@
   <ion-tab tab="location">
     <ion-router-outlet name="location"></ion-router-outlet>
   </ion-tab>
-  <ion-tab tab="tab2">
-    <ion-router-outlet name="tab2"></ion-router-outlet>
+
+  <ion-tab tab="establishments">
+    <ion-router-outlet name="establishments"></ion-router-outlet>
   </ion-tab>
-  <ion-tab tab="tab3">
-    <ion-router-outlet name="tab3"></ion-router-outlet>
+
+  <ion-tab tab="restaurants">
+    <ion-router-outlet name="restaurants"></ion-router-outlet>
   </ion-tab>
 
   <ion-tab-bar slot="bottom">
 
+    <ion-tab-button tab="establishments" href="/tabs/(establishments:establishments)">
+      <ion-icon name="md-compass"></ion-icon>
+      <ion-label>Establishments</ion-label>
+    </ion-tab-button>
+
     <ion-tab-button tab="location" href="/tabs/(location:location)">
       <ion-icon name="md-compass"></ion-icon>
       <ion-label>Location</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="restaurants" href="/tabs/(restaurants:restaurants)">
+      <ion-icon name="md-compass"></ion-icon>
+      <ion-label>Restaurants</ion-label>
     </ion-tab-button>
 
   </ion-tab-bar>

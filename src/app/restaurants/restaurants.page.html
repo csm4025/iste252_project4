@@ -1,13 +1,31 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>restaurants</ion-title>
+    <ion-title>Restaurants</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="establishments"></ion-back-button>
+      </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
   <ion-list>
     <ion-item *ngFor="let res of restaurants">
-      <ion-label>{{res.restaurant.name}}</ion-label>
+        <ion-card>
+          <ion-img src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp"></ion-img>
+          <ion-card-header>
+              <ion-card-title>{{res.restaurant.name}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+              <p>Address: {{res.restaurant.location.address}}</p>  
+            <p>Cuisines: {{res.restaurant.cuisines}}</p>
+              <p>Cost: {{res.restaurant.currency}}</p>
+              <p>Rating: {{res.restaurant.user_rating.aggregate_rating}}</p>
+          </ion-card-content>
+        </ion-card>
     </ion-item>
   </ion-list>
 </ion-content>
+
+
+
+
