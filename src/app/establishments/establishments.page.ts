@@ -5,8 +5,8 @@ import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-establishments',
-  templateUrl: './establishments.page.html',
-  styleUrls: ['./establishments.page.scss'],
+  templateUrl: 'establishments.page.html',
+  styleUrls: ['establishments.page.scss'],
 })
 export class EstablishmentsPage implements OnInit {
 

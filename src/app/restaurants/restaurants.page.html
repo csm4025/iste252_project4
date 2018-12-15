@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="secondary">
     <ion-title>Restaurants</ion-title>
     <ion-buttons slot="start">
         <ion-back-button defaultHref="establishments"></ion-back-button>
@@ -11,9 +11,10 @@
   <ion-list>
     <ion-item *ngFor="let res of restaurants">
         <ion-card>
+          <!-- Zomato API does not provide images for free, so I used their placeholder image -->
           <ion-img src="https://b.zmtcdn.com/images/placeholder_200.png?output-format=webp"></ion-img>
           <ion-card-header>
-              <ion-card-title>{{res.restaurant.name}}</ion-card-title>
+              <ion-card-title color="secondary">{{res.restaurant.name}}</ion-card-title>
           </ion-card-header>
           <ion-card-content>
               <p>Address: {{res.restaurant.location.address}}</p>  

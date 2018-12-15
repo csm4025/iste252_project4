@@ -12,4 +12,18 @@
 
 .sc-ion-card-md-h {
     width: 100%;
+    margin-bottom: 45px;
+    margin-top: 45px;
+}
+
+.ion-color.sc-ion-label-md-h {
+    margin-left: 18px;
+}
+
+#locationContainer {
+    --background: url('assets/bckground.jpg') no-repeat 100% 100%;
+}
+
+#tabLabel {
+    margin-left: 0px;
 }
